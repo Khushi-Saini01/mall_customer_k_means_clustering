@@ -87,7 +87,7 @@ kmeans = KMeans(n_clusters=5, init='k-means++', random_state=42)
 kmeans.fit(X)
 
 # Streamlit UI
-st.title("🛍️ Mall Customer Segmentation App")
+st.title("Mall Customer Segmentation App")
 st.write("This app segments mall customers using K-Means clustering.")
 
 # User input
@@ -101,7 +101,7 @@ st.success(f"The predicted cluster for this customer is: Cluster {cluster}")
 
 # Show centroids
 centroids = kmeans.cluster_centers_
-st.subheader("📍 Cluster Centroids")
+st.subheader("Cluster Centroids")
 st.write(pd.DataFrame(centroids, columns=['Annual Income (k$)', 'Spending Score (1-100)']))
 ```
 
